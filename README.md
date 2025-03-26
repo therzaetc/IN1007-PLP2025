@@ -1,10 +1,11 @@
 # IN1007-PLP2025
-Alunas:
+# Alunas:
 
 Maria Luisa Barreto de Gois - mlbg
 
 Maria Thereza Carlos Rodrigues - mtcr
 
+# Atividade
 
 Este projeto tem como objetivo atender à disciplina de Paradigmas de Linguanges de Programação, ofertado pelo CIN na UFPE no semestre 2025.1.
 
