@@ -1,4 +1,4 @@
-# IN1007-PLP2025
+# Paradigmas de Linguagem de Programação 2025.1 - IN1007
 # Alunas:
 
 Maria Luisa Barreto de Gois - mlbg
