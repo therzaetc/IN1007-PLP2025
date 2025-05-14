@@ -15,8 +15,9 @@ O objetivo será estender uma linguagem de programação funcional com operadore
 Este projeto estende as linguagens Funcional 1 com operadores para manipulação de Strings e validações com JSON. As funções são as seguintes:
 
 
-    Verifica a conformidade com o formato JSON: avalia uma expressão e verifica se o seu valor tem o formato básico de JSON válido.
+- Verifica a conformidade com o formato JSON: avalia uma expressão e verifica se o seu valor tem o formato básico de JSON válido.
 
+```
 Input: {"nome": "João"}
 
 Output: true
@@ -24,9 +25,11 @@ Output: true
 Input: {nome: "Maria", idade: 20}
 
 Output: false
+```
 
-    Preenche um padrão pré-definido: realiza a substituição de placeholders {} dentro de uma string com valores fornecidos dinamicamente.
+- Preenche um padrão pré-definido: realiza a substituição de placeholders {} dentro de uma string com valores fornecidos dinamicamente.
 
+```
 Input: "Olá, {}, você tem {} mensagens." ["Lucas", "5"]
 
 Output: "Olá, Lucas, você tem 5 mensagens."
@@ -34,9 +37,11 @@ Output: "Olá, Lucas, você tem 5 mensagens."
 Input: "Resultado: {} + {} = {}" ["2", "3", "5"]
 
 Output: "Resultado: 2 + 3 = 5"
+```
 
-    Verifica padrão customizado: permite comparar uma string contra um template de caracteres especiais (como "DllD"), e retorna um valor booleano indicando se o texto obedece ao padrão.
+- Verifica padrão customizado: permite comparar uma string contra um template de caracteres especiais (como "DllD"), e retorna um valor booleano indicando se o texto obedece ao padrão.
 
+```
 Input: "Abe9" "DllD"
 
 Output: true
@@ -44,9 +49,11 @@ Output: true
 Input: "abc123" "lllDDD"
 
 Output: true
+```
 
-    Substitui ocorrências de uma substring: substitui substrings dentro de uma string.
+- Substitui ocorrências de uma substring: substitui substrings dentro de uma string.
 
+```
 Input: "banana" "na" "ma"
 
 Output: "bamama"
@@ -54,3 +61,4 @@ Output: "bamama"
 Input: "abcabc" "a" "z"
 
 Output: "zbczbc"
+```
