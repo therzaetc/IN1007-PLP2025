@@ -12,7 +12,7 @@ Este projeto tem como objetivo atender à disciplina de Paradigmas de Linguagens
 O objetivo será estender uma linguagem de programação funcional com operadores básicos para manipulação de strings, adicionando funcionalidades como verificação de conformidade com o formato JSON, preenchimento de padrões pré-definidos, verificação de padrões e substituição de ocorrências de substrings.
 
 # Contextualização
-Este projeto estende as linguagens Funcional 1 com operadores para manipulação de Strings e validações com JSON. As funções são as seguintes:
+Este projeto estende a linguagem Funcional 1 com operadores para manipulação de Strings e validações com JSON. As funções são as seguintes:
 
 
 - Verifica a conformidade com o formato JSON: avalia uma expressão e verifica se o seu valor tem o formato básico de JSON válido.
