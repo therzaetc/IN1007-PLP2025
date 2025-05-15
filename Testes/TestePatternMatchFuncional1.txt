@@ -1,0 +1,61 @@
+// Testes da função matchPattern na linguagem Funcional1
+
+// Teste 1: Padrão LLL-DDD (3 letras maiúsculas, hífen, 3 dígitos)
+let
+  var texto = "ABC-123"
+in
+  matchPattern(texto, "LLL-DDD")
+
+// Teste 2: Padrão lll-DDD (3 letras minúsculas, hífen, 3 dígitos)
+let
+  var texto = "abc-123"
+in
+  matchPattern(texto, "lll-DDD")
+
+// Teste 3: Padrão misto AAA-XXX (3 letras qualquer caso, hífen, 3 caracteres quaisquer)
+let
+  var texto = "AbC-1@3"
+in
+  matchPattern(texto, "AAA-XXX")
+
+// Teste 4: Padrão inválido (tamanho diferente)
+let
+  var texto = "ABC-1234"
+in
+  matchPattern(texto, "LLL-DDD")
+
+// Teste 5: Padrão com caracteres literais
+let
+  var texto = "PLP-2024"
+in
+  matchPattern(texto, "LLL-DDDD")
+
+// Teste 6: Padrão para email simples (lll@lll)
+let
+  var texto = "abc@def"
+in
+  matchPattern(texto, "lll@lll")
+
+// Teste 7: Padrão para telefone (DD) DDDDD-DDDD
+let
+  var texto = "(11) 98765-4321"
+in
+  matchPattern(texto, "(DD) DDDDD-DDDD")
+
+// Teste 8: Padrão para data DD/DD/DDDD
+let
+  var texto = "25/12/2024"
+in
+  matchPattern(texto, "DD/DD/DDDD")
+
+// Teste 9: Padrão para nome próprio Llllllll
+let
+  var texto = "Patricia"
+in
+  matchPattern(texto, "Lllllll")
+
+// Teste 10: Padrão para código de produto AA-DDDD-LL
+let
+  var texto = "XY-1234-AB"
+in
+  matchPattern(texto, "AA-DDDD-LL") 

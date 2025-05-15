@@ -1,0 +1,71 @@
+// Testes da função fillPattern na linguagem Funcional1
+
+// Teste 1: Preenchimento simples com strings
+let
+  var padrao = "Olá {}, bem-vindo ao {}!"
+  var valores = ["mundo", "PLP"]
+in
+  fillPattern(padrao, valores)
+
+// Teste 2: Preenchimento com números
+let
+  var padrao = "A soma de {} com {} é {}"
+  var valores = [10, 20, 30]
+in
+  fillPattern(padrao, valores)
+
+// Teste 3: Preenchimento com expressões
+let
+  var padrao = "O resultado é: {}"
+  var valores = [(2 + 3) * 4]
+in
+  fillPattern(padrao, valores)
+
+// Teste 4: Preenchimento com strings concatenadas
+let
+  var padrao = "Nome: {}, Idade: {}"
+  var valores = ["João" ++ " Silva", 25]
+in
+  fillPattern(padrao, valores)
+
+// Teste 5: Preenchimento com mais valores que placeholders
+let
+  var padrao = "Primeiro: {}, Segundo: {}"
+  var valores = ["um", "dois", "três", "quatro"]
+in
+  fillPattern(padrao, valores)
+
+// Teste 6: Preenchimento com menos valores que placeholders
+let
+  var padrao = "A: {}, B: {}, C: {}"
+  var valores = ["valor1", "valor2"]
+in
+  fillPattern(padrao, valores)
+
+// Teste 7: Preenchimento sem placeholders
+let
+  var padrao = "Texto sem placeholders"
+  var valores = ["não", "usado"]
+in
+  fillPattern(padrao, valores)
+
+// Teste 8: Preenchimento com lista vazia
+let
+  var padrao = "Teste com {} e {}"
+  var valores = []
+in
+  fillPattern(padrao, valores)
+
+// Teste 9: Preenchimento com valores booleanos
+let
+  var padrao = "Resultado do teste: {}"
+  var valores = [2 > 1]
+in
+  fillPattern(padrao, valores)
+
+// Teste 10: Preenchimento com múltiplos tipos
+let
+  var padrao = "String: {}, Número: {}, Booleano: {}"
+  var valores = ["texto", 42, true]
+in
+  fillPattern(padrao, valores) 

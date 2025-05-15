@@ -1,0 +1,61 @@
+// Testes da função replace na linguagem Funcional1
+
+// Teste 1: Substituição simples
+let
+  var texto = "Hello, World!"
+in
+  replace(texto, "World", "PLP")
+
+// Teste 2: Substituição múltipla
+let
+  var texto = "banana banana banana"
+in
+  replace(texto, "banana", "laranja")
+
+// Teste 3: Substituição com string vazia
+let
+  var texto = "Remover espaços"
+in
+  replace(texto, " ", "")
+
+// Teste 4: Substituição quando não encontra o padrão
+let
+  var texto = "Texto original"
+in
+  replace(texto, "inexistente", "novo")
+
+// Teste 5: Substituição com caracteres especiais
+let
+  var texto = "linha1\nlinha2"
+in
+  replace(texto, "\n", " - ")
+
+// Teste 6: Substituição de substring no meio
+let
+  var texto = "O gato e o gato"
+in
+  replace(texto, "gato", "cachorro")
+
+// Teste 7: Substituição com strings vazias
+let
+  var texto = ""
+in
+  replace(texto, "algo", "novo")
+
+// Teste 8: Substituição com espaços
+let
+  var texto = "  espaços  extras  "
+in
+  replace(texto, "  ", " ")
+
+// Teste 9: Substituição case-sensitive
+let
+  var texto = "TESTE teste TESTE"
+in
+  replace(texto, "TESTE", "Novo")
+
+// Teste 10: Substituição com números
+let
+  var texto = "Versão 1.0"
+in
+  replace(texto, "1.0", "2.0") 

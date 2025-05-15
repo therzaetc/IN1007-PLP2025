@@ -1,0 +1,61 @@
+// Testes de validação JSON na linguagem Funcional1
+
+// Teste de objeto JSON simples
+let
+  var json1 = "{\"nome\":\"João\",\"idade\":30}"
+in
+  validateJson(json1)
+
+// Teste de array JSON
+let
+  var json2 = "[1,2,3,4,5]"
+in
+  validateJson(json2)
+
+// Teste de objeto JSON aninhado
+let
+  var json3 = "{\"pessoa\":{\"nome\":\"Maria\",\"endereco\":{\"rua\":\"Principal\",\"numero\":123}}}"
+in
+  validateJson(json3)
+
+// Teste de JSON inválido
+let
+  var json4 = "{nome:\"valor\"" // Faltando chaves e aspas
+in
+  validateJson(json4)
+
+// Teste de array JSON com diferentes tipos
+let
+  var json5 = "[\"texto\", 42, true, null, {\"chave\":\"valor\"}]"
+in
+  validateJson(json5)
+
+// Teste de JSON vazio
+let
+  var json6 = ""
+in
+  validateJson(json6)
+
+// Teste de objeto JSON com array aninhado
+let
+  var json7 = "{\"numeros\":[1,2,3],\"textos\":[\"a\",\"b\",\"c\"]}"
+in
+  validateJson(json7)
+
+// Teste de JSON com caracteres especiais
+let
+  var json8 = "{\"texto\":\"Olá, mundo!\\nNova linha\"}"
+in
+  validateJson(json8)
+
+// Teste de JSON com valores booleanos e nulos
+let
+  var json9 = "{\"ativo\":true,\"deletado\":false,\"data\":null}"
+in
+  validateJson(json9)
+
+// Teste de JSON com números decimais
+let
+  var json10 = "{\"preco\":99.99,\"desconto\":0.1}"
+in
+  validateJson(json10) 
