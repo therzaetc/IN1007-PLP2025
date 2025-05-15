@@ -379,6 +379,7 @@ ListExp ::= Expressao  |  Expressao, ListExp
 IfThenElse ::= "if" Expressao "then" Expressao "else" Expressao
 
 // Novas funcionalidades
+
 ValidateJson ::= "validateJson" "(" Expressao ")"
 
 StringReplace ::= "replace" "(" Expressao "," Expressao "," Expressao ")"
