@@ -872,7 +872,7 @@ ListExp ::= Expressao  |  Expressao, ListExp
 IfThenElse ::= "if" Expressao "then" Expressao "else" Expressao
 
 // Novas funcionalidades
-[ValidateJson](https://github.com/therzaetc/IN1007-PLP2025/blob/main/src/lf1/plp/functional1/expression/JsonValidatorExpression.java) ::= "validateJson" "(" Expressao ")"
+[ValidateJson](https://github.com/therzaetc/IN1007-PLP2025/blob/main/Classes/JsonValidatorExpression.java) ::= "validateJson" "(" Expressao ")"
 
 StringReplace ::= "replace" "(" Expressao "," Expressao "," Expressao ")"
 
