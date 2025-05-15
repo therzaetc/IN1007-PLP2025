@@ -823,7 +823,7 @@ public void testPreenchimentoSimples() throws VariavelJaDeclaradaException, Vari
 ```
 
 ## 5. Gramática BNF Atualizada
-```bnf
+
 Programa ::= Expressao
 
 Expressao ::= Valor
@@ -870,16 +870,16 @@ Aplicacao:= Id"(" ListExp ")"
 ListExp ::= Expressao  |  Expressao, ListExp
 
 IfThenElse ::= "if" Expressao "then" Expressao "else" Expressao
-```
+
 // Novas funcionalidades
-- [ValidateJson](https://github.com/therzaetc/IN1007-PLP2025/blob/main/Classes/JsonValidatorExpression.java) ::= "validateJson" "(" Expressao ")"
+[ValidateJson](https://github.com/therzaetc/IN1007-PLP2025/blob/main/Classes/JsonValidatorExpression.java) ::= "validateJson" "(" Expressao ")"
 
-StringReplace ::= "replace" "(" Expressao "," Expressao "," Expressao ")"
+[StringReplace](https://github.com/therzaetc/IN1007-PLP2025/blob/main/Classes/StringReplaceExpression.java) ::= "replace" "(" Expressao "," Expressao "," Expressao ")"
 
-PatternMatch ::= "matchPattern" "(" Expressao "," Expressao ")"
+[PatternMatch](https://github.com/therzaetc/IN1007-PLP2025/blob/main/Classes/PatternMatchExpression.java) ::= "matchPattern" "(" Expressao "," Expressao ")"
 
-PatternFill ::= "fillPattern" "(" Expressao "," "[" ListExp "]" ")"
-```
+[PatternFill](https://github.com/therzaetc/IN1007-PLP2025/blob/main/Classes/PatternFillExpression.java) ::= "fillPattern" "(" Expressao "," "[" ListExp "]" ")"
+
 
 ## Integração com o Parser
 Trechos adicionados ao arquivo Functional1.jj.
